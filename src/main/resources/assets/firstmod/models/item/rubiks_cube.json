@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "firstmod:item/rubiks_cube",
-		"particle": "firstmod:item/rubiks_cube"
+		"0": "firstmod:item/rubiks_cube"
 	},
 	"elements": [
 		{
