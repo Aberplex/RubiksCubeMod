@@ -1,3 +1,9 @@
 {
-  "item.firstmod.rubiks_cube": "Rubik's Cube"
+  "item.firstmod.rubiks_cube": "Rubik's Cube",
+  "item.firstmod.blue_fragment": "Blue Fragment",
+  "item.firstmod.red_fragment": "Red Fragment",
+  "item.firstmod.green_fragment": "Green Fragment",
+  "item.firstmod.orange_fragment": "Orange Fragment",
+  "item.firstmod.yellow_fragment": "Yellow Fragment",
+  "item.firstmod.white_fragment": "White Fragment"
 }
