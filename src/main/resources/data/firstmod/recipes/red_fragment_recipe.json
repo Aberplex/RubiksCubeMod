@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bbb",
+    "brb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:red_concrete_powder"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "firstmod:red_fragment"
+  }
+}

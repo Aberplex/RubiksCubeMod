@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bbb",
+    "beb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:green_concrete_powder"
+    },
+    "e": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "firstmod:green_fragment"
+  }
+}

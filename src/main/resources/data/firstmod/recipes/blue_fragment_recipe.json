@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bbb",
+    "blb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blue_concrete_powder"
+    },
+    "l": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "result": {
+    "item": "firstmod:blue_fragment"
+  }
+}

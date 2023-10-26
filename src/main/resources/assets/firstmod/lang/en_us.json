@@ -5,5 +5,7 @@
   "item.firstmod.green_fragment": "Green Fragment",
   "item.firstmod.orange_fragment": "Orange Fragment",
   "item.firstmod.yellow_fragment": "Yellow Fragment",
-  "item.firstmod.white_fragment": "White Fragment"
+  "item.firstmod.white_fragment": "White Fragment",
+
+  "itemgroup.rubiks_cube": "Rubik's Cube Items"
 }
