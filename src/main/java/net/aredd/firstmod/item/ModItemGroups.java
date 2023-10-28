@@ -1,6 +1,7 @@
 package net.aredd.firstmod.item;
 
 import net.aredd.firstmod.FirstMod;
+import net.aredd.firstmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -21,7 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ORANGE_FRAGMENT);
                         entries.add(ModItems.GREEN_FRAGMENT);
 
-
+                        entries.add(ModBlocks.CUBE_CRAFTING_STATION);
 
                     }).build());
 

@@ -1,5 +1,6 @@
 package net.aredd.firstmod;
 
+import net.aredd.firstmod.block.ModBlocks;
 import net.aredd.firstmod.item.ModItemGroups;
 import net.aredd.firstmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,8 @@ public class FirstMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
