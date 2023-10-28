@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block CUBE_CRAFTING_STATION = registerBlock("cube_craft_station",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_LOG).nonOpaque()));
+            new Block(FabricBlockSettings.create().nonOpaque().strength(3, 10).requiresTool()));
 
 
 
