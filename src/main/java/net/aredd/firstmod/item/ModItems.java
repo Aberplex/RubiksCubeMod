@@ -1,6 +1,7 @@
 package net.aredd.firstmod.item;
 
 import net.aredd.firstmod.FirstMod;
+import net.aredd.firstmod.item.custom.CubeDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -18,6 +19,9 @@ public class ModItems {
     public static final Item ORANGE_FRAGMENT = registerItem("orange_fragment", new Item(new FabricItemSettings()));
     public static final Item YELLOW_FRAGMENT = registerItem("yellow_fragment", new Item(new FabricItemSettings()));
     public static final Item WHITE_FRAGMENT = registerItem("white_fragment", new Item(new FabricItemSettings()));
+
+    public static final Item CUBE_DETECTOR = registerItem("cube_detector",
+            new CubeDetectorItem(new FabricItemSettings().maxDamage(150)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);

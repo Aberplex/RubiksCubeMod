@@ -24,6 +24,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.CUBE_CRAFTING_STATION);
 
+                        entries.add(ModItems.CUBE_DETECTOR);
+
                     }).build());
 
 

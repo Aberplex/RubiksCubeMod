@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bnr",
+    "wcy",
+    "gdo"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blue_concrete"
+    },
+    "r": {
+      "item": "minecraft:red_concrete"
+    },
+    "y": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "w": {
+      "item": "minecraft:white_concrete"
+    },
+    "g": {
+      "item": "minecraft:green_concrete"
+    },
+    "o": {
+      "item": "minecraft:orange_concrete"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "n": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "c": {
+      "item": "firstmod:rubiks_cube"
+    }
+  },
+  "result": {
+    "item": "firstmod:cube_craft_station"
+  }
+}
