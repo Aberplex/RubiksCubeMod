@@ -21,7 +21,7 @@ public class ModItems {
     public static final Item WHITE_FRAGMENT = registerItem("white_fragment", new Item(new FabricItemSettings()));
 
     public static final Item CUBE_DETECTOR = registerItem("cube_detector",
-            new CubeDetectorItem(new FabricItemSettings().maxDamage(150)));
+            new CubeDetectorItem(new FabricItemSettings().maxDamage(350)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);
