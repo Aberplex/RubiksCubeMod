@@ -3,8 +3,7 @@
 	"package": "net.aredd.firstmod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin",
-		"CraftingScreenHandlerMixin"
+		
 	],
 	"injectors": {
 		"defaultRequire": 1
