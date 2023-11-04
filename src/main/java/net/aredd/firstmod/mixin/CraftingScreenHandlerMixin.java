@@ -1,6 +1,6 @@
 package net.aredd.firstmod.mixin;
 
-import net.minecraft.block.CraftingTableBlock;
+import net.aredd.firstmod.block.custom.CubeCraftStationBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.CraftingScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(CraftingScreenHandler.class)
-public abstract class CraftingTableScreenHandlerMixin {
+public abstract class CraftingScreenHandlerMixin {
 
     @Shadow
     @Final
@@ -20,7 +20,7 @@ public abstract class CraftingTableScreenHandlerMixin {
 
     @Inject(method = "canUse", at = @At("HEAD"), cancellable = true)
     private void canUse(PlayerEntity player, CallbackInfoReturnable<Boolean> info) {
-        if (context.get((world, pos) -> world.getBlockState(pos).getBlock() instanceof CraftingTableBlock, true)) {
+        if (context.get((world, pos) -> world.getBlockState(pos).getBlock() instanceof CubeCraftStationBlock, true)) {
             info.setReturnValue(true);
         }
     }

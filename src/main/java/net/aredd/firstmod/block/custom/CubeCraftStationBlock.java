@@ -1,8 +1,8 @@
 package net.aredd.firstmod.block.custom;
 
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.CraftingTableBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.CraftingScreenHandler;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -16,11 +16,11 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class CubeCraftBlock
-        extends Block {
+public class CubeCraftStationBlock
+        extends CraftingTableBlock {
     private static final Text TITLE = Text.translatable("container.crafting");
 
-    public CubeCraftBlock(AbstractBlock.Settings settings) {
+    public CubeCraftStationBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
 

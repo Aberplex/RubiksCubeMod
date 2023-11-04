@@ -1,7 +1,7 @@
 package net.aredd.firstmod.block;
 
 import net.aredd.firstmod.FirstMod;
-import net.aredd.firstmod.block.custom.CubeCraftBlock;
+import net.aredd.firstmod.block.custom.CubeCraftStationBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block CUBE_CRAFTING_STATION = registerBlock("cube_craft_station",
-            new CubeCraftBlock(FabricBlockSettings.create().nonOpaque().strength(3, 10).requiresTool().mapColor(MapColor.LIGHT_BLUE)));
+            new CubeCraftStationBlock(FabricBlockSettings.create().nonOpaque().strength(3, 10).requiresTool().mapColor(MapColor.LIGHT_BLUE)));
 
 
 
