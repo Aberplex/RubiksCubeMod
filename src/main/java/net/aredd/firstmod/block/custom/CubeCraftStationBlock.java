@@ -1,5 +1,6 @@
 package net.aredd.firstmod.block.custom;
 
+import net.aredd.firstmod.screen.CubeCraftStationScreenHandler;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CraftingTableBlock;
@@ -36,6 +37,6 @@ public class CubeCraftStationBlock
 
     @Override
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE);
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CubeCraftStationScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE);
     }
 }
