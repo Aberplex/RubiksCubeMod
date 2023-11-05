@@ -11,5 +11,9 @@
 
   "item.firstmod.cube_detector": "Rubik's Artifact Detector",
 
-  "itemgroup.rubiks_cube": "Rubik's Cube Items"
+  "itemgroup.rubiks_cube": "Rubik's Cube Items",
+
+  "tooltip.firstmod.cube_detector.tooltip": "Finds Rubik's cube artifacts underground!",
+
+  "tooltip.firstmod.cube_craft_station.tooltip": "Crafts Rubik's cube tools and weapons!"
 }
