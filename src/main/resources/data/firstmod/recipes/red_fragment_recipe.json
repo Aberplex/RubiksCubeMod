@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "firstmod:cube_crafting",
   "category": "misc",
   "pattern": [
     "bbb",

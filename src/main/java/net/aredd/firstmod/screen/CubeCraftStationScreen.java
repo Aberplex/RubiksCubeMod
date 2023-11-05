@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 public class CubeCraftStationScreen
         extends HandledScreen<CubeCraftStationScreenHandler>
         implements RecipeBookProvider {
-    private static final Identifier TEXTURE = new Identifier(FirstMod.MOD_ID, "textures/gui/cube_craft_station");
+    private static final Identifier TEXTURE = new Identifier("textures/gui/container/crafting_table.png");
     private final RecipeBookWidget recipeBook = new RecipeBookWidget();
     private boolean narrow;
 
