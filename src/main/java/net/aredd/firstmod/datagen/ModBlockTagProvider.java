@@ -19,7 +19,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.CUBE_DETECTOR_DETECTABLE_BLOCKS)
                 .add(ModBlocks.CUBE_ARTIFACT)
                 .forceAddTag(BlockTags.IRON_ORES)
-                .forceAddTag(BlockTags.DIAMOND_ORES);
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .forceAddTag(BlockTags.EMERALD_ORES)
+        ;
 
     }
 }
