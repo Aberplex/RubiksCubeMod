@@ -26,6 +26,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CUBE_DETECTOR);
 
+                        entries.add(ModBlocks.CUBE_ARTIFACT);
+
                     }).build());
 
 

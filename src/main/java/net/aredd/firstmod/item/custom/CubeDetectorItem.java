@@ -1,9 +1,8 @@
 package net.aredd.firstmod.item.custom;
 
-import net.aredd.firstmod.block.ModBlocks;
+import net.aredd.firstmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -60,7 +59,7 @@ public class CubeDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DEEPSLATE_IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE);
+        return state.isIn(ModTags.Blocks.CUBE_DETECTOR_DETECTABLE_BLOCKS);
     }
 
     @Override

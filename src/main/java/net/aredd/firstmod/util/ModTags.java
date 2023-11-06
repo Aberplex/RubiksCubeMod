@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
-        private static final TagKey<Block> CUBE_DETECTOR_DECTECTABLE_BLOCKS =
+        public static final TagKey<Block> CUBE_DETECTOR_DETECTABLE_BLOCKS =
                 createTag("cube_detector_detectable_blocks");
 
         private static TagKey<Block> createTag(String name) {
