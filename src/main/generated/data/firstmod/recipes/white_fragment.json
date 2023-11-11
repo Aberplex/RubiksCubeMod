@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:white_concrete_powder"
+    },
+    "w": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "ccc",
+    "cwc",
+    "ccc"
+  ],
+  "result": {
+    "item": "firstmod:white_fragment"
+  },
+  "show_notification": true
+}

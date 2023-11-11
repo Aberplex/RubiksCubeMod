@@ -106,7 +106,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("cgc")
                 .pattern("ccc")
                 .input('c', Blocks.GREEN_CONCRETE_POWDER)
-                .input('G', Items.EMERALD)
+                .input('g', Items.EMERALD)
                 .criterion(hasItem(Blocks.GREEN_CONCRETE_POWDER), conditionsFromItem(Blocks.GREEN_CONCRETE_POWDER))
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_FRAGMENT)));
