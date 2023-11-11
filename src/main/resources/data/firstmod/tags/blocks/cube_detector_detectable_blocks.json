@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#minecraft:iron_ores",
-    "#minecraft:diamond_ores",
-    "#firstmod:cube_artifact"
-  ]
-}
