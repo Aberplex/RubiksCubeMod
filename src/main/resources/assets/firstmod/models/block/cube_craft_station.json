@@ -7,7 +7,7 @@
 		"4": "firstmod:block/floor_texture",
 		"5": "firstmod:block/leg_texture",
 		"7": "firstmod:block/side_texture",
-		"particle": "firstmod:block/floor_texture"
+		"particle": "firstmod:block/main_texture"
 	},
 	"elements": [
 		{

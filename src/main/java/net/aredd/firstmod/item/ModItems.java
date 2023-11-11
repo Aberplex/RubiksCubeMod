@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item YELLOW_FRAGMENT = registerItem("yellow_fragment", new Item(new FabricItemSettings()));
     public static final Item WHITE_FRAGMENT = registerItem("white_fragment", new Item(new FabricItemSettings()));
 
-    public static final Item CUBE_DETECTOR = registerItem("cube_detector",
+    public static final Item CUBE_DETECTOR = registerItem("cube_detector_2d",
             new CubeDetectorItem(new FabricItemSettings().maxDamage(350)));
 
     private static Item registerItem(String name, Item item) {
