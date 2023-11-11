@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "firstmod:green_fragment"
+    },
+    {
+      "item": "firstmod:blue_fragment"
+    },
+    {
+      "item": "firstmod:yellow_fragment"
+    },
+    {
+      "item": "firstmod:red_fragment"
+    },
+    {
+      "item": "firstmod:white_fragment"
+    },
+    {
+      "item": "firstmod:orange_fragment"
+    }
+  ],
+  "result": {
+    "item": "firstmod:rubiks_cube"
+  }
+}

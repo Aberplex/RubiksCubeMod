@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:blue_fragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_green_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:green_fragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_orange_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:orange_fragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_red_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:red_fragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:rubiks_cube"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:yellow_fragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_green_fragment",
+      "has_orange_fragment",
+      "has_blue_fragment",
+      "has_red_fragment",
+      "has_yellow_fragment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:rubiks_cube"
+    ]
+  },
+  "sends_telemetry_event": false
+}

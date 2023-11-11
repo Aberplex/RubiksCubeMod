@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:orange_concrete_powder"
+    },
+    "o": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "ccc",
+    "coc",
+    "ccc"
+  ],
+  "result": {
+    "item": "firstmod:blue_fragment"
+  },
+  "show_notification": true
+}

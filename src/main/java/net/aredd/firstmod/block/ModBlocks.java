@@ -16,7 +16,7 @@ public class ModBlocks {
     public static final Block CUBE_CRAFTING_STATION = registerBlock("cube_craft_station",
             new CubeCraftStationBlock(FabricBlockSettings.create().nonOpaque().strength(3, 10).requiresTool().mapColor(MapColor.LIGHT_BLUE)));
     public static final Block CUBE_ARTIFACT = registerBlock("cube_artifact",
-            new CubeCraftStationBlock(FabricBlockSettings.create().nonOpaque().strength(3, 10).requiresTool().mapColor(MapColor.LIGHT_BLUE)));
+            new Block(FabricBlockSettings.create().nonOpaque().strength(3, 10).requiresTool().mapColor(MapColor.LIGHT_BLUE)));
 
 
 
