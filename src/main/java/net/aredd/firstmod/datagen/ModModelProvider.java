@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        itemModelGenerator.register(ModItems.CUBE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUBE_DETECTOR, Models.GENERATED);
     }
 }

@@ -1,7 +1,9 @@
-// 1.20.2	2023-11-11T19:29:17.0152658	First Mod/Model Definitions
+// 1.20.2	2023-11-12T09:00:59.245407	First Mod/Model Definitions
 4d35462ca1250e23bdf36185fcb7295e93af7121 assets\firstmod\blockstates\cube_craft_station.json
-f48756c0e660ce5261de8e3ebd396d4d1080aa9a assets\firstmod\models\item\cube_artifact.json
+2cf91e6486b030eef693eac3e66abf948386f778 assets\firstmod\models\item\cube_sword_2d.json
 0875ea9663a9e8df73869009e8084561fab1d0ac assets\firstmod\models\item\cube_craft_station.json
+f48756c0e660ce5261de8e3ebd396d4d1080aa9a assets\firstmod\models\item\cube_artifact.json
 b52792c6a3ded1acfb3f35ce38630b467c909973 assets\firstmod\models\block\cube_artifact.json
 9238a4ac12c55839bb9077eab217af3250914e39 assets\firstmod\models\block\cube_craft_station.json
+ae76bd07a771347506dee2af1b5ba946bd67ba71 assets\firstmod\models\item\cube_detector_2d.json
 5a3106b174d4419dcfe41b1a26945fb8f7e481d5 assets\firstmod\blockstates\cube_artifact.json

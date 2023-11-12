@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     CUBE_TOOLS(-1, 2500, 0f, 9, 26,
-            () -> Ingredient.ofItems(ModItems.RUBIKS_CUBE));
+            () -> Ingredient.ofItems(ModItems.CUBE_SWORD));
 
     private final int mininglevel;
     private final int itemDurability;
