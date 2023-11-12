@@ -26,6 +26,6 @@ public abstract class ModelLoaderMixin {
         this.addModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_detector", "inventory"));
     }
     public void addCubeSword(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
-        this.addModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_sword", "inventory"));
+        this.addModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_sword_3d", "inventory"));
     }
 }

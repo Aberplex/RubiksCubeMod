@@ -21,7 +21,7 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).hehe$getmodels().getModelManager().getModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_detector", "inventory"));
         }
         if (stack.isOf(ModItems.CUBE_SWORD) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).hehe$getmodels().getModelManager().getModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_sword", "inventory"));
+            return ((ItemRendererAccessor) this).hehe$getmodels().getModelManager().getModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_sword_3d", "inventory"));
         }
         return value;
     }
