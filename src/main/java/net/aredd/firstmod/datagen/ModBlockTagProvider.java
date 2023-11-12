@@ -22,14 +22,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Blocks.CUBE_DETECTOR_DETECTABLE_BLOCKS)
-                .add(ModBlocks.CUBE_ARTIFACT)
-                .add(Blocks.ANCIENT_DEBRIS)
-                .forceAddTag(BlockTags.IRON_ORES)
-                .forceAddTag(BlockTags.DIAMOND_ORES)
-                .forceAddTag(BlockTags.EMERALD_ORES)
-                .forceAddTag(BlockTags.COPPER_ORES)
-                .forceAddTag(BlockTags.COAL_ORES)
-                .forceAddTag(BlockTags.GOLD_ORES);
+                .add(ModBlocks.CUBE_ARTIFACT);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.CUBE_ARTIFACT)

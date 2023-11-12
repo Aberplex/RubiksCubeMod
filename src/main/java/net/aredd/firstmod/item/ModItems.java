@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,6 +23,10 @@ public class ModItems {
 
     public static final Item CUBE_DETECTOR = registerItem("cube_detector_2d",
             new CubeDetectorItem(new FabricItemSettings().maxDamage(350)));
+
+    public static final Item CUBE_SWORD = registerItem("cube_sword_2d",
+            new SwordItem(ModToolMaterial.CUBE_TOOLS, 4, .6f, new FabricItemSettings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);

@@ -19,7 +19,10 @@ public abstract class ItemRendererMixin {
     public BakedModel useCubeDetectorModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         if (stack.isOf(ModItems.CUBE_DETECTOR) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).hehe$getmodels().getModelManager().getModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_detector", "inventory"));
-            }
-        return value;
         }
+        if (stack.isOf(ModItems.CUBE_SWORD) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).hehe$getmodels().getModelManager().getModel(new ModelIdentifier(FirstMod.MOD_ID, "cube_sword", "inventory"));
+        }
+        return value;
     }
+}

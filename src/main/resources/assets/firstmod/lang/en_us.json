@@ -17,5 +17,7 @@
 
   "tooltip.firstmod.cube_craft_station.tooltip": "Crafts Rubik's cube tools and weapons!",
 
-  "block.firstmod.cube_artifact": "Rubik's cube artifact"
+  "block.firstmod.cube_artifact": "Rubik's cube artifact",
+
+  "item.firstmod.cube_sword": "Rubik's Cube Sword"
 }

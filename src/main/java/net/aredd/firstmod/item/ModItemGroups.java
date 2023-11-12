@@ -28,6 +28,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.CUBE_ARTIFACT);
 
+                        entries.add(ModItems.CUBE_SWORD);
+
                     }).build());
 
 
