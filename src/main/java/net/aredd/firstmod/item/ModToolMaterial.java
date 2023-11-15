@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    CUBE_TOOLS(-1, 2500, 0f, 9, 26,
+    CUBE_TOOLS(0, 0, 0f, 0, 26,
             () -> Ingredient.ofItems(ModItems.CUBE_SWORD));
 
     private final int mininglevel;

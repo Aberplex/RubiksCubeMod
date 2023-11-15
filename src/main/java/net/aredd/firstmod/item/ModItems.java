@@ -24,7 +24,8 @@ public class ModItems {
     public static final Item CUBE_DETECTOR = registerItem("cube_detector_2d",
             new CubeDetectorItem(new FabricItemSettings().maxDamage(350)));
 
-    public static final Item CUBE_SWORD = registerItem("cube_sword", new SwordItem(ModToolMaterial.CUBE_TOOLS, 4, .6f, new FabricItemSettings()));
+    public static final Item CUBE_SWORD = registerItem("cube_sword",
+            new SwordItem(ModToolMaterial.CUBE_TOOLS, 8, 0.5f, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {
