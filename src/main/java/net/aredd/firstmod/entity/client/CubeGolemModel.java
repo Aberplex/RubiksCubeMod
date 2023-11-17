@@ -56,6 +56,7 @@ public class CubeGolemModel<T extends CubeGolemEntity> extends SinglePartEntityM
 		this.setHeadAngles(netHeadYaw, headPitch);
 
 		this.animateMovement(ModAnimations.WALKING, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.updateAnimation(entity.attackAnimationState, ModAnimations.ATTACKING, ageInTicks, 2f);
 
 	}
 

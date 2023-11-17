@@ -53,4 +53,37 @@ public class ModAnimations {
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(0.625f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
+    public static final Animation ATTACKING = Animation.Builder.create(0.8343334f)
+            .addBoneAnimation("leftarm",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("leftarm",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.20834334f, AnimationHelper.createRotationalVector(67.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.4167667f, AnimationHelper.createRotationalVector(132.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.625f, AnimationHelper.createRotationalVector(232.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.8343334f, AnimationHelper.createRotationalVector(67.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("rightarm",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("rightarm",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.20834334f, AnimationHelper.createRotationalVector(70f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.4167667f, AnimationHelper.createRotationalVector(132.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.625f, AnimationHelper.createRotationalVector(232.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.8343334f, AnimationHelper.createRotationalVector(67.5f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR))).build();
 }
