@@ -17,7 +17,7 @@ public class CubeGolemRenderer extends MobEntityRenderer<CubeGolemEntity, CubeGo
 
     @Override
     public Identifier getTexture(CubeGolemEntity entity) {
-        return null;
+        return TEXTURE;
     }
 
     @Override
