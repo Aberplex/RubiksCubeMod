@@ -19,5 +19,7 @@
 
   "block.firstmod.cube_artifact": "Rubik's cube artifact",
 
-  "item.firstmod.cube_sword": "Rubik's Cube Sword"
+  "item.firstmod.cube_sword": "Rubik's Cube Sword",
+
+  "item.firstmod.cube_golem_spawn_egg": "Rubik's Cube Golem Spawn Egg"
 }
