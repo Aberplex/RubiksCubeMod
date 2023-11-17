@@ -6,7 +6,6 @@ import net.minecraft.client.render.entity.animation.Keyframe;
 import net.minecraft.client.render.entity.animation.Transformation;
 
 public class ModAnimations {
-
     public static final Animation WALKING  = Animation.Builder.create(0.625f).looping()
             .addBoneAnimation("leftarm",
                     new Transformation(Transformation.Targets.ROTATE,
@@ -14,7 +13,7 @@ public class ModAnimations {
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(0.20834334f, AnimationHelper.createRotationalVector(-62.5f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.4167667f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                            new Keyframe(0.4167667f, AnimationHelper.createRotationalVector(67.5f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(0.625f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR)))

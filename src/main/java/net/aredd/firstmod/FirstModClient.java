@@ -14,8 +14,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.entity.EntityRenderer;
-import net.minecraft.client.render.entity.model.EntityModelLayer;
 
 public class FirstModClient implements ClientModInitializer {
     @Override
