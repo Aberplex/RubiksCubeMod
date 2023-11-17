@@ -6,19 +6,20 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.HuskEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
-public class CubeGolemEntity extends HuskEntity {
+public class CubeGolemEntity extends HostileEntity {
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
 
-    public CubeGolemEntity(EntityType<? extends HuskEntity> entityType, World world) {
+    public CubeGolemEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -56,7 +57,6 @@ public class CubeGolemEntity extends HuskEntity {
                 .add(EntityAttributes.GENERIC_ARMOR,0.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,15)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,100);
-
     }
 
     @Override
