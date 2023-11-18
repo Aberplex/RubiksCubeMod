@@ -15,5 +15,4 @@ public class ModEntities {
             new Identifier(FirstMod.MOD_ID, "cube_golem"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CubeGolemEntity::new)
                     .dimensions(EntityDimensions.fixed(1.5f,2.43f)).build());
-
 }

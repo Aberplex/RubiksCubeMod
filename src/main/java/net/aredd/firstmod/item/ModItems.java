@@ -3,6 +3,7 @@ package net.aredd.firstmod.item;
 import net.aredd.firstmod.FirstMod;
 import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.item.custom.CubeDetectorItem;
+import net.aredd.firstmod.item.custom.CubeSwordItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
