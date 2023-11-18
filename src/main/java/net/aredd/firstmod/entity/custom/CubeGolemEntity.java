@@ -4,6 +4,7 @@ import net.aredd.firstmod.entity.ai.CubeGolemAttackGoal;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -13,6 +14,7 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
 public class CubeGolemEntity extends HostileEntity {
@@ -83,6 +85,11 @@ public class CubeGolemEntity extends HostileEntity {
 
     public void setAttacking(boolean attacking) {
         this.dataTracker.set(ATTACKING, attacking);
+    }
+
+    @Override
+    public boolean canSpawn(WorldAccess world, SpawnReason spawnReason) {
+        return super.canSpawn(world, spawnReason);
     }
 
     @Override

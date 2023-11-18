@@ -1,5 +1,6 @@
 package net.aredd.firstmod.datagen;
 
+
 import net.aredd.firstmod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
