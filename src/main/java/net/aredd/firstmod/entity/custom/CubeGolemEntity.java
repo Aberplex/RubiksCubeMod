@@ -101,6 +101,8 @@ public class CubeGolemEntity extends HostileEntity {
         this.targetSelector.add(0, new ActiveTargetGoal<HuskEntity>(this, HuskEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<FishEntity>(this, FishEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<StriderEntity>(this, StriderEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<IronGolemEntity>(this, IronGolemEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<SnowGolemEntity>(this, SnowGolemEntity.class, true));
     }
 
     public static DefaultAttributeContainer.Builder createCubeGolemAttributes() {

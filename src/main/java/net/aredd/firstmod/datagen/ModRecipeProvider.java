@@ -120,5 +120,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.WHITE_CONCRETE_POWDER), conditionsFromItem(Blocks.WHITE_CONCRETE_POWDER))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.WHITE_FRAGMENT)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CUBE_SWORD, 1)
+                .pattern(" a ")
+                .pattern(" c ")
+                .pattern(" c ")
+                .input('c', ModItems.RUBIKS_CUBE)
+                .input('a', ModBlocks.CUBE_ARTIFACT)
+                .criterion(hasItem(ModItems.RUBIKS_CUBE), conditionsFromItem(ModItems.RUBIKS_CUBE))
+                .criterion(hasItem(ModBlocks.CUBE_ARTIFACT), conditionsFromItem(ModBlocks.CUBE_ARTIFACT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CUBE_SWORD)));
     }
 }

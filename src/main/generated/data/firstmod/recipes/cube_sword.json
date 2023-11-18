@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "firstmod:cube_artifact"
+    },
+    "c": {
+      "item": "firstmod:rubiks_cube"
+    }
+  },
+  "pattern": [
+    " a ",
+    " c ",
+    " c "
+  ],
+  "result": {
+    "item": "firstmod:cube_sword"
+  },
+  "show_notification": true
+}
