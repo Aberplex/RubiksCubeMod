@@ -27,7 +27,7 @@ public class ModItems {
             new CubeDetectorItem(new FabricItemSettings().maxDamage(350)));
 
     public static final Item CUBE_SWORD = registerItem("cube_sword",
-            new SwordItem(ModToolMaterial.CUBE_TOOLS, 8, -2.4f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.CUBE_TOOLS, 11, -2.4f, new FabricItemSettings()));
 
     public static final Item CUBE_GOLEM_SPAWN_EGG = registerItem("cube_golem_spawn_egg",
             new SpawnEggItem(ModEntities.CUBE_GOLEM, 0xF7F9F9, 0x3498DBf, new FabricItemSettings()));

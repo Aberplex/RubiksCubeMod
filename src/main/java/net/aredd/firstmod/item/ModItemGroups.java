@@ -30,6 +30,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CUBE_SWORD);
 
+                        entries.add(ModItems.CUBE_GOLEM_SPAWN_EGG);
+
                     }).build());
 
 

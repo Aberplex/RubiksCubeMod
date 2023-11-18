@@ -77,7 +77,8 @@ public class CubeGolemEntity extends HostileEntity {
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f)
                 .add(EntityAttributes.GENERIC_ARMOR,0.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,15)
-                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,100);
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,100)
+                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01f);
     }
 
     public void setAttacking(boolean attacking) {

@@ -20,8 +20,8 @@ public class CubeGolemAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        attackDelay = 70;
-        ticksUntilNextAttack = 30;
+        attackDelay = 10;
+        ticksUntilNextAttack = 20;
     }
 
     @Override
@@ -47,11 +47,11 @@ public class CubeGolemAttackGoal extends MeleeAttackGoal {
     }
 
     private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy) {
-        return this.entity.distanceTo(pEnemy) <= 3.5f; // TODO
+        return this.entity.distanceTo(pEnemy) <= 6f; // TODO
     }
 
     protected void resetAttackCooldown() {
-        this.ticksUntilNextAttack = this.getTickCount(attackDelay * 1);
+        this.ticksUntilNextAttack = this.getTickCount(attackDelay * 2);
     }
 
     protected boolean isTimeToStartAttackAnimation() {
