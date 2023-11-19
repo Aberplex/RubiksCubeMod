@@ -1,10 +1,12 @@
 package net.aredd.firstmod;
 
 import net.aredd.firstmod.block.ModBlocks;
+import net.aredd.firstmod.datagen.ModWorldGenerator;
 import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.entity.custom.CubeGolemEntity;
 import net.aredd.firstmod.item.ModItemGroups;
 import net.aredd.firstmod.item.ModItems;
+import net.aredd.firstmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -24,5 +26,7 @@ public class FirstMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CUBE_GOLEM, CubeGolemEntity.createCubeGolemAttributes());
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

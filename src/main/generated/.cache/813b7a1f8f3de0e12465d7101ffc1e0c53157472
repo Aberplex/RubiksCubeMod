@@ -1,4 +1,4 @@
-// 1.20.2	2023-11-18T14:58:51.9042838	Rubiks's Cube Mod/Recipes
+// 1.20.2	2023-11-18T19:06:45.1850043	Rubiks's Cube Mod/Recipes
 9032183a66c8132edac3fc65b4e92ca35587f338 data\firstmod\advancements\recipes\misc\cube_craft_station.json
 a4067e19c589163bed3967d11c198b41a5433bfc data\firstmod\recipes\red_fragment.json
 a7d3fd97ce1d3c5ea8a49137b738897ebf34eb98 data\firstmod\advancements\recipes\misc\rubiks_cube.json
@@ -6,8 +6,8 @@ a7d3fd97ce1d3c5ea8a49137b738897ebf34eb98 data\firstmod\advancements\recipes\misc
 4420e27420de301b8f908a6c389a2a6e4085b478 data\firstmod\advancements\recipes\misc\white_fragment.json
 d3666f4545744431ad61050acead72ab2ac9dbb2 data\firstmod\recipes\rubiks_cube.json
 cd0bb0188c41311ac9d15a0a082cd5a2c6ef9775 data\firstmod\recipes\green_fragment.json
-cc84e1a70e8e17718aa56984d4108314d5160c09 data\firstmod\recipes\orange_fragment.json
 a6342b27b650f46ee2c9a10f4e94e43684a17edd data\firstmod\advancements\recipes\misc\red_fragment.json
+cc84e1a70e8e17718aa56984d4108314d5160c09 data\firstmod\recipes\orange_fragment.json
 abf53cf6890987e5df614f0d6ce03be12f3e8320 data\firstmod\advancements\recipes\misc\blue_fragment.json
 660ecc3da93a74ebaf82d91fbc00885a52322d32 data\firstmod\recipes\cube_craft_station.json
 76f872362a17acb408f1e2ebe1ed5ef3bc39094b data\firstmod\advancements\recipes\misc\yellow_fragment.json
