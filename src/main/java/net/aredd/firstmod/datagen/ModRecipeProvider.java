@@ -123,11 +123,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CUBE_SWORD, 1)
                 .pattern(" a ")
-                .pattern(" c ")
+                .pattern("scs")
                 .pattern(" c ")
                 .input('c', ModItems.RUBIKS_CUBE)
                 .input('a', ModBlocks.CUBE_ARTIFACT)
+                .input('s', ModItems.CUBE_SHARD)
                 .criterion(hasItem(ModItems.RUBIKS_CUBE), conditionsFromItem(ModItems.RUBIKS_CUBE))
+                .criterion(hasItem(ModItems.CUBE_SHARD), conditionsFromItem(ModItems.CUBE_SHARD))
                 .criterion(hasItem(ModBlocks.CUBE_ARTIFACT), conditionsFromItem(ModBlocks.CUBE_ARTIFACT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CUBE_SWORD)));
     }

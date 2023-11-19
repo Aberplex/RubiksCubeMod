@@ -1,12 +1,14 @@
 package net.aredd.firstmod.entity.custom;
 
 import net.aredd.firstmod.entity.ai.CubeGolemAttackGoal;
+import net.aredd.firstmod.item.ModItems;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
@@ -72,6 +74,7 @@ public class CubeGolemEntity extends HostileEntity {
 
         this.targetSelector.add(0, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<WardenEntity>(this, WardenEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<WitherEntity>(this, WitherEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<EndermanEntity>(this, EndermanEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<VillagerEntity>(this, VillagerEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<PillagerEntity>(this, PillagerEntity.class, true));
@@ -85,7 +88,6 @@ public class CubeGolemEntity extends HostileEntity {
         this.targetSelector.add(0, new ActiveTargetGoal<CowEntity>(this, CowEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<ChickenEntity>(this, ChickenEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<RabbitEntity>(this, RabbitEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<WitherEntity>(this, WitherEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<EnderDragonEntity>(this, EnderDragonEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<WitherSkeletonEntity>(this, WitherSkeletonEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<PiglinEntity>(this, PiglinEntity.class, true));
@@ -108,10 +110,10 @@ public class CubeGolemEntity extends HostileEntity {
     public static DefaultAttributeContainer.Builder createCubeGolemAttributes() {
         return HostileEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 240)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1.0)
                 .add(EntityAttributes.GENERIC_ARMOR,0.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,15)
-                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,100)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,1.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01f);
     }
 
@@ -143,5 +145,14 @@ public class CubeGolemEntity extends HostileEntity {
     @Override
     public boolean canSpawn(WorldView world) {
         return super.canSpawn(world);
+    }
+
+    @Override
+    protected void dropEquipment(DamageSource source, int lootingMultiplier, boolean allowDrops) {
+        super.dropEquipment(source, lootingMultiplier, allowDrops);
+        ItemEntity itemEntity = this.dropItem(ModItems.CUBE_SHARD);
+        if (itemEntity != null) {
+            itemEntity.setCovetedItem();
+        }
     }
 }

@@ -13,6 +13,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_cube_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:cube_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_rubiks_cube": {
       "conditions": {
         "items": [
@@ -36,6 +48,7 @@
     [
       "has_the_recipe",
       "has_rubiks_cube",
+      "has_cube_shard",
       "has_cube_artifact"
     ]
   ],

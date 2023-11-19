@@ -32,6 +32,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CUBE_GOLEM_SPAWN_EGG);
 
+                        entries.add(ModItems.CUBE_SHARD);
+
                     }).build());
 
 

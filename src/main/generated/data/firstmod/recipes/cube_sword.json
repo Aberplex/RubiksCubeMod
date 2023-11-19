@@ -7,11 +7,14 @@
     },
     "c": {
       "item": "firstmod:rubiks_cube"
+    },
+    "s": {
+      "item": "firstmod:cube_shard"
     }
   },
   "pattern": [
     " a ",
-    " c ",
+    "scs",
     " c "
   ],
   "result": {
