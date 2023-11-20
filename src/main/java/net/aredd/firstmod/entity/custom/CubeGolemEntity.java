@@ -72,49 +72,49 @@ public class CubeGolemEntity extends HostileEntity {
         this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
         this.goalSelector.add(4, new LookAroundGoal(this));
 
-        this.targetSelector.add(0, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<WardenEntity>(this, WardenEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<WitherEntity>(this, WitherEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<EndermanEntity>(this, EndermanEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<VillagerEntity>(this, VillagerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<PillagerEntity>(this, PillagerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<EvokerEntity>(this, EvokerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<VindicatorEntity>(this, VindicatorEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<CreeperEntity>(this, CreeperEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<ZombieEntity>(this, ZombieEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<SkeletonEntity>(this, SkeletonEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<SpiderEntity>(this, SpiderEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<PigEntity>(this, PigEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<CowEntity>(this, CowEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<ChickenEntity>(this, ChickenEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<RabbitEntity>(this, RabbitEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<EnderDragonEntity>(this, EnderDragonEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<WitherSkeletonEntity>(this, WitherSkeletonEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<PiglinEntity>(this, PiglinEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<PiglinBruteEntity>(this, PiglinBruteEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<ZombifiedPiglinEntity>(this, ZombifiedPiglinEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<BlazeEntity>(this, BlazeEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<GhastEntity>(this, GhastEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<RavagerEntity>(this, RavagerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<GuardianEntity>(this, GuardianEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<ElderGuardianEntity>(this, ElderGuardianEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<ShulkerEntity>(this, ShulkerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<DrownedEntity>(this, DrownedEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<HuskEntity>(this, HuskEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<FishEntity>(this, FishEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<StriderEntity>(this, StriderEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<IronGolemEntity>(this, IronGolemEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<SnowGolemEntity>(this, SnowGolemEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, WardenEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, WitherEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, EndermanEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PillagerEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, EvokerEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, VindicatorEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, CreeperEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ZombieEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, SkeletonEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, SpiderEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PigEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, CowEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, RabbitEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, EnderDragonEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, WitherSkeletonEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PiglinEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PiglinBruteEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ZombifiedPiglinEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, BlazeEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, GhastEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, RavagerEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, GuardianEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ElderGuardianEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ShulkerEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, DrownedEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, HuskEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, FishEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, StriderEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, SnowGolemEntity.class, true));
     }
 
     public static DefaultAttributeContainer.Builder createCubeGolemAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f)
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 240.0f)
-                .add(EntityAttributes.GENERIC_ARMOR,0.5f)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,15.0f)
-                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,1.0f)
-                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.35)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 240)
+                .add(EntityAttributes.GENERIC_ARMOR,0.5)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,35)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,1)
+                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01);
     }
 
     public void setAttacking(boolean attacking) {
