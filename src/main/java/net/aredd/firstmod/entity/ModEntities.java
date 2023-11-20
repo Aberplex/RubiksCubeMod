@@ -13,6 +13,6 @@ import net.minecraft.util.Identifier;
 public class ModEntities {
     public static final EntityType<CubeGolemEntity> CUBE_GOLEM = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(FirstMod.MOD_ID, "cube_golem"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CubeGolemEntity::new)
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, CubeGolemEntity::new)
                     .dimensions(EntityDimensions.fixed(1.5f,2.43f)).build());
 }
