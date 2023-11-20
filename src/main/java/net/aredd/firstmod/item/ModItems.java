@@ -3,6 +3,7 @@ package net.aredd.firstmod.item;
 import net.aredd.firstmod.FirstMod;
 import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.item.custom.CubeDetectorItem;
+import net.aredd.firstmod.item.custom.CubeSwordItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
@@ -27,10 +28,10 @@ public class ModItems {
             new CubeDetectorItem(new FabricItemSettings().maxDamage(350)));
 
     public static final Item CUBE_SWORD = registerItem("cube_sword",
-            new SwordItem(ModToolMaterial.CUBE_TOOLS, 11, -2.4f, new FabricItemSettings()));
+            new CubeSwordItem(ModToolMaterial.CUBE_TOOLS, 11, -2.4f, new FabricItemSettings()));
 
     public static final Item CUBE_GOLEM_SPAWN_EGG = registerItem("cube_golem_spawn_egg",
-            new SpawnEggItem(ModEntities.CUBE_GOLEM, 0xF7F9F9, 0x3498DBf, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.CUBE_GOLEM, 0x3498DBf, 0xDC4747, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

@@ -26,5 +26,7 @@ public class FirstModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.CUBE_GOLEM, CubeGolemRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.CUBE_GOLEM, CubeGolemModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.SWORD_PROJECTILE, FlyingItemEntityRenderer::new);
     }
 }

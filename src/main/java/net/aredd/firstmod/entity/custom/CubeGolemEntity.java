@@ -15,6 +15,7 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.*;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.raid.RaiderEntity;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
@@ -76,22 +77,17 @@ public class CubeGolemEntity extends HostileEntity {
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, WardenEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, WitherEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, EndermanEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, PillagerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, EvokerEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, VindicatorEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PatrolEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PassiveEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, CreeperEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ZombieEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, SkeletonEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, SpiderEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PigEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, CowEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, RabbitEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, GolemEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, EnderDragonEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, WitherSkeletonEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PiglinEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PiglinBruteEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, AbstractPiglinEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ZombifiedPiglinEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, BlazeEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, GhastEntity.class, true));
@@ -101,10 +97,15 @@ public class CubeGolemEntity extends HostileEntity {
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ShulkerEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, DrownedEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, HuskEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, FishEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, WaterCreatureEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, StriderEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, SnowGolemEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, SlimeEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, AllayEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, AllayEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ZoglinEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, EndermiteEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, SilverfishEntity.class, true));
+        this.targetSelector.add(0, new ActiveTargetGoal<>(this, VexEntity.class, true));
     }
 
     public static DefaultAttributeContainer.Builder createCubeGolemAttributes() {
@@ -114,7 +115,8 @@ public class CubeGolemEntity extends HostileEntity {
                 .add(EntityAttributes.GENERIC_ARMOR,0.5)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,35)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,1)
-                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01);
+                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 22);
     }
 
     public void setAttacking(boolean attacking) {

@@ -1,6 +1,7 @@
 package net.aredd.firstmod.datagen;
 
 import net.aredd.firstmod.block.ModBlocks;
+import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
