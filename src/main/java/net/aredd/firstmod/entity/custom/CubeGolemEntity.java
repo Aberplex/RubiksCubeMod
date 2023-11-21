@@ -13,12 +13,14 @@ import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.*;
-import net.minecraft.entity.passive.*;
+import net.minecraft.entity.passive.AllayEntity;
+import net.minecraft.entity.passive.GolemEntity;
+import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.StriderEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.raid.RaiderEntity;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
-import net.minecraft.world.WorldView;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.world.*;
+import org.jetbrains.annotations.Nullable;
 
 public class CubeGolemEntity extends HostileEntity {
     private static final TrackedData<Boolean> ATTACKING =
@@ -77,7 +79,6 @@ public class CubeGolemEntity extends HostileEntity {
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, WardenEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, WitherEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, EndermanEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, PillagerEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, PatrolEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, PassiveEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, CreeperEntity.class, true));
@@ -91,7 +92,6 @@ public class CubeGolemEntity extends HostileEntity {
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ZombifiedPiglinEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, BlazeEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, GhastEntity.class, true));
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, RavagerEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, GuardianEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ElderGuardianEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ShulkerEntity.class, true));
@@ -157,4 +157,10 @@ public class CubeGolemEntity extends HostileEntity {
             itemEntity.setCovetedItem();
         }
     }
+
+    @Nullable
+    public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, @Nullable EntityData entityData, @Nullable NbtCompound entityNbt) {
+        return super.initialize(world, difficulty, spawnReason, entityData, entityNbt);
+    }
+
 }
