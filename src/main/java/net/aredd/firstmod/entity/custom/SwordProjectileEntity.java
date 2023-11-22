@@ -2,10 +2,8 @@ package net.aredd.firstmod.entity.custom;
 
 import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.item.ModItems;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.network.listener.ClientPlayPacketListener;
@@ -37,7 +35,7 @@ public class SwordProjectileEntity extends ThrownItemEntity {
     @Override
     protected void onBlockHit(BlockHitResult blockHitResult) {
         if(!this.getWorld().isClient()) {
-            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 4.0f, World.ExplosionSourceType.BLOCK);
+            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 1f, World.ExplosionSourceType.BLOCK);
         }
         this.discard();
     }
@@ -46,7 +44,7 @@ public class SwordProjectileEntity extends ThrownItemEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         if(!this.getWorld().isClient()) {
-            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 4.0f, World.ExplosionSourceType.BLOCK);
+            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 1.75f, World.ExplosionSourceType.BLOCK);
         }
         this.discard();
     }
