@@ -117,7 +117,7 @@ public class CubeGolemEntity extends HostileEntity {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,35)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,1)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 22);
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 222);
     }
 
     public void setAttacking(boolean attacking) {
@@ -163,5 +163,4 @@ public class CubeGolemEntity extends HostileEntity {
     public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, @Nullable EntityData entityData, @Nullable NbtCompound entityNbt) {
         return super.initialize(world, difficulty, spawnReason, entityData, entityNbt);
     }
-
 }
