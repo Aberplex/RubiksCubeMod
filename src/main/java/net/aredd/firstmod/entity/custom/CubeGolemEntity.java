@@ -111,7 +111,7 @@ public class CubeGolemEntity extends HostileEntity {
 
     public static DefaultAttributeContainer.Builder createCubeGolemAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.35)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.45)
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 240)
                 .add(EntityAttributes.GENERIC_ARMOR,0.5)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,35)
