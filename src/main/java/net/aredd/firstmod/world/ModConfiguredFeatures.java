@@ -3,7 +3,6 @@ package net.aredd.firstmod.world;
 import net.aredd.firstmod.FirstMod;
 import net.aredd.firstmod.block.ModBlocks;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
@@ -28,7 +27,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.CUBE_ARTIFACT.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.CUBE_ARTIFACT.getDefaultState()));
 
-        register(context, CUBE_ARTIFACT_KEY, Feature.ORE, new OreFeatureConfig(overworldCubeArtifacts, 1, 1));
+        register(context, CUBE_ARTIFACT_KEY, Feature.ORE, new OreFeatureConfig(overworldCubeArtifacts, 3, 1));
 
 
     }

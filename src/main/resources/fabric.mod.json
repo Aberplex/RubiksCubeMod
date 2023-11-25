@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "firstmod",
 	"version": "${version}",
-	"name": "Rubiks's Cube Mod",
-	"description": "This is my first mod made by Aberplex :]",
+	"name": "Aberplex's Rubiks's Cube Mod",
+	"description": "This mod takes the Rubik's cube to a whole new level and adds it all to Minecraft!",
 	"authors": [
-		"Aberplex!"
+		"Aberplex"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

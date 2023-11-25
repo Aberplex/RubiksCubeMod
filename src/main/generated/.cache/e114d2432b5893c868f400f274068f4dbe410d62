@@ -1,5 +1,5 @@
-// 1.20.2	2023-11-20T19:27:52.677918	Rubiks's Cube Mod/Tags for minecraft:block
+// 1.20.2	2023-11-25T08:46:29.9143661	Rubiks's Cube Mod/Tags for minecraft:block
+20c69c3849efbdb78a8822d5680e9cdacbd9b588 data\firstmod\tags\blocks\cube_detector_detectable_blocks.json
 20c69c3849efbdb78a8822d5680e9cdacbd9b588 data\minecraft\tags\blocks\needs_diamond_tool.json
 62feb8c32e3b8726ce49af62bb606ef493fc89cc data\minecraft\tags\blocks\mineable\pickaxe.json
 434fbab84d412625069e10a3850c005f0e945216 data\fabric\tags\blocks\needs_tool_level_4.json
-20c69c3849efbdb78a8822d5680e9cdacbd9b588 data\firstmod\tags\blocks\cube_detector_detectable_blocks.json

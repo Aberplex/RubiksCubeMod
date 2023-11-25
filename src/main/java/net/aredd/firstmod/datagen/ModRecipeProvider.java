@@ -4,13 +4,10 @@ import net.aredd.firstmod.block.ModBlocks;
 import net.aredd.firstmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -46,7 +43,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ORANGE_CONCRETE), conditionsFromItem(Items.ORANGE_CONCRETE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CUBE_CRAFTING_STATION)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBIKS_CUBE,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBIKS_CUBE, 1)
                 .input(ModItems.GREEN_FRAGMENT)
                 .input(ModItems.BLUE_FRAGMENT)
                 .input(ModItems.YELLOW_FRAGMENT)
@@ -61,7 +58,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.YELLOW_FRAGMENT), conditionsFromItem(ModItems.YELLOW_FRAGMENT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBIKS_CUBE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_FRAGMENT,1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_FRAGMENT, 1)
                 .pattern("ccc")
                 .pattern("cbc")
                 .pattern("ccc")
@@ -71,7 +68,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.LAPIS_LAZULI), conditionsFromItem(Items.LAPIS_LAZULI))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLUE_FRAGMENT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_FRAGMENT,1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_FRAGMENT, 1)
                 .pattern("ccc")
                 .pattern("crc")
                 .pattern("ccc")
@@ -81,7 +78,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_FRAGMENT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.YELLOW_FRAGMENT,1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.YELLOW_FRAGMENT, 1)
                 .pattern("ccc")
                 .pattern("cyc")
                 .pattern("ccc")
@@ -91,7 +88,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.YELLOW_FRAGMENT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_FRAGMENT,1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_FRAGMENT, 1)
                 .pattern("ccc")
                 .pattern("coc")
                 .pattern("ccc")
@@ -101,7 +98,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ORANGE_FRAGMENT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GREEN_FRAGMENT,1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GREEN_FRAGMENT, 1)
                 .pattern("ccc")
                 .pattern("cgc")
                 .pattern("ccc")
@@ -111,7 +108,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_FRAGMENT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WHITE_FRAGMENT,1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WHITE_FRAGMENT, 1)
                 .pattern("ccc")
                 .pattern("cwc")
                 .pattern("ccc")
@@ -121,16 +118,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.WHITE_FRAGMENT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CUBE_SWORD, 1)
-                .pattern(" a ")
-                .pattern("scs")
-                .pattern(" c ")
-                .input('c', ModItems.RUBIKS_CUBE)
-                .input('a', ModBlocks.CUBE_ARTIFACT)
-                .input('s', ModItems.CUBE_SHARD)
-                .criterion(hasItem(ModItems.RUBIKS_CUBE), conditionsFromItem(ModItems.RUBIKS_CUBE))
-                .criterion(hasItem(ModItems.CUBE_SHARD), conditionsFromItem(ModItems.CUBE_SHARD))
-                .criterion(hasItem(ModBlocks.CUBE_ARTIFACT), conditionsFromItem(ModBlocks.CUBE_ARTIFACT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CUBE_SWORD)));
     }
 }
