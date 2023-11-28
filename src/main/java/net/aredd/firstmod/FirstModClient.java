@@ -2,11 +2,11 @@ package net.aredd.firstmod;
 
 import net.aredd.firstmod.block.ModBlocks;
 import net.aredd.firstmod.block.recipe.ModRecipeType;
+import net.aredd.firstmod.client.gui.screen.ingame.CubeCraftStationScreen;
 import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.entity.client.CubeGolemModel;
 import net.aredd.firstmod.entity.client.CubeGolemRenderer;
 import net.aredd.firstmod.entity.client.ModModelLayers;
-import net.aredd.firstmod.client.gui.screen.ingame.CubeCraftStationScreen;
 import net.aredd.firstmod.screen.ModScreenHandlerType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -22,11 +22,12 @@ public class FirstModClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CUBE_CRAFTING_STATION, RenderLayer.getCutout());
         HandledScreens.register(ModScreenHandlerType.CUBE_CRAFT_STATION, CubeCraftStationScreen::new);
-        ModRecipeType.registerModRecipeType();
 
         EntityRendererRegistry.register(ModEntities.CUBE_GOLEM, CubeGolemRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.CUBE_GOLEM, CubeGolemModel::getTexturedModelData);
 
         EntityRendererRegistry.register(ModEntities.SWORD_PROJECTILE, FlyingItemEntityRenderer::new);
+
+        ModRecipeType.registerModRecipeType();
     }
 }

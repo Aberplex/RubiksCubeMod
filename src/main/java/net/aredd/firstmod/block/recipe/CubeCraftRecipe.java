@@ -225,7 +225,7 @@ public class CubeCraftRecipe implements CraftingRecipe {
             CubeCraftRecipe shapedRecipe = new CubeCraftRecipe(recipe.group, recipe.category, i, j, defaultedList, recipe.result, recipe.showNotification);
             return DataResult.success(shapedRecipe);
         }, recipe -> {
-            throw new NotImplementedException("Serializing DiamondCraftingRecipe is not implemented yet.");
+            throw new NotImplementedException("Serializing CubeCraftRecipe is not implemented yet.");
         });
 
         @Override

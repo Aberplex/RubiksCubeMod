@@ -62,8 +62,8 @@ public class CubeCraftStationScreenHandler extends AbstractRecipeScreenHandler<R
         if (optional.isPresent()) {
             ItemStack output;
             RecipeEntry<CubeCraftRecipe> recipeEntry = optional.get();
-            CubeCraftRecipe diamondCraftingRecipe = recipeEntry.value();
-            if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry) && (output = diamondCraftingRecipe.craft(craftingInventory, world.getRegistryManager())).isItemEnabled(world.getEnabledFeatures())) {
+            CubeCraftRecipe cubeCraftRecipe = recipeEntry.value();
+            if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry) && (output = cubeCraftRecipe.craft(craftingInventory, world.getRegistryManager())).isItemEnabled(world.getEnabledFeatures())) {
                 result = output;
             }
         }
@@ -173,5 +173,4 @@ public class CubeCraftStationScreenHandler extends AbstractRecipeScreenHandler<R
     public boolean canInsertIntoSlot(int index) {
         return index != this.getCraftingResultSlotIndex();
     }
-    }
-
+}
