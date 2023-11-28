@@ -16,7 +16,7 @@ public class ModScreenHandlerType {
         return Registry.register(Registries.SCREEN_HANDLER, new Identifier(FirstMod.MOD_ID, id), new ScreenHandlerType<T>(factory, FeatureFlags.VANILLA_FEATURES));
     }
 
-    private static <T extends ScreenHandler> ScreenHandlerType<T> register(String id, ScreenHandlerType.Factory<T> factory, FeatureFlag... requiredFeatures) {
+    private static <T extends ScreenHandler> ScreenHandlerType<T> register(String id, ScreenHandlerType.Factory<T> factory, FeatureFlag ... requiredFeatures) {
         return Registry.register(Registries.SCREEN_HANDLER, new Identifier(FirstMod.MOD_ID, id), new ScreenHandlerType<T>(factory, FeatureFlags.FEATURE_MANAGER.featureSetOf(requiredFeatures)));
     }
 

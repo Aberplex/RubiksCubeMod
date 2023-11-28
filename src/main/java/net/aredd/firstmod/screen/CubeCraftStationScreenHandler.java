@@ -2,6 +2,7 @@ package net.aredd.firstmod.screen;
 
 import net.aredd.firstmod.block.ModBlocks;
 import net.aredd.firstmod.block.recipe.CubeCraftRecipe;
+import net.aredd.firstmod.block.recipe.ModRecipeType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.*;
@@ -57,7 +58,7 @@ public class CubeCraftStationScreenHandler extends AbstractRecipeScreenHandler<R
         }
         ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity) player;
         ItemStack result = ItemStack.EMPTY;
-        Optional<RecipeEntry<CubeCraftRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(ModRecipeType.CUBE_CRAFTING, craftingInventory, world);
+        Optional<RecipeEntry<CubeCraftRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(ModRecipeType.CUBE_CRAFT_STATION, craftingInventory, world);
         if (optional.isPresent()) {
             ItemStack output;
             RecipeEntry<CubeCraftRecipe> recipeEntry = optional.get();
