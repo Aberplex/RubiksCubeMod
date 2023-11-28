@@ -1,10 +1,7 @@
-// 1.20.2	2023-11-25T08:46:29.9163668	Rubiks's Cube Mod/Model Definitions
+// 1.20.2	2023-11-28T16:52:48.0151805	Aberplex's Rubiks's Cube Mod/Model Definitions
 b6fcc5fda407d507e78b3372b327236ce36bf520 assets\firstmod\models\item\cube_sword.json
 f48756c0e660ce5261de8e3ebd396d4d1080aa9a assets\firstmod\models\item\cube_artifact.json
 ae76bd07a771347506dee2af1b5ba946bd67ba71 assets\firstmod\models\item\cube_detector_2d.json
-0875ea9663a9e8df73869009e8084561fab1d0ac assets\firstmod\models\item\cube_craft_station.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\firstmod\models\item\cube_golem_spawn_egg.json
-4d35462ca1250e23bdf36185fcb7295e93af7121 assets\firstmod\blockstates\cube_craft_station.json
 5a3106b174d4419dcfe41b1a26945fb8f7e481d5 assets\firstmod\blockstates\cube_artifact.json
 b52792c6a3ded1acfb3f35ce38630b467c909973 assets\firstmod\models\block\cube_artifact.json
-9238a4ac12c55839bb9077eab217af3250914e39 assets\firstmod\models\block\cube_craft_station.json

@@ -23,13 +23,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CUBE_ARTIFACT);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.CUBE_ARTIFACT)
-                .add(ModBlocks.CUBE_CRAFTING_STATION);
+                .add(ModBlocks.CUBE_ARTIFACT);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.CUBE_ARTIFACT);
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))
-                .add(ModBlocks.CUBE_CRAFTING_STATION);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")));
+        //Add Blocks here
     }
 }

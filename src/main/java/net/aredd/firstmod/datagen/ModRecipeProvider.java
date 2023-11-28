@@ -19,29 +19,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CUBE_CRAFTING_STATION, 1)
-                .pattern("rnb")
-                .pattern("ycw")
-                .pattern("odg")
-                .input('b', Items.BLUE_CONCRETE)
-                .input('n', Items.NETHERITE_INGOT)
-                .input('r', Items.RED_CONCRETE)
-                .input('w', Items.WHITE_CONCRETE)
-                .input('c', ModItems.RUBIKS_CUBE)
-                .input('y', Items.YELLOW_CONCRETE)
-                .input('g', Items.GREEN_CONCRETE)
-                .input('d', Items.DIAMOND)
-                .input('o', Items.ORANGE_CONCRETE)
-                .criterion(hasItem(Items.BLUE_CONCRETE), conditionsFromItem(Items.BLUE_CONCRETE))
-                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
-                .criterion(hasItem(Items.RED_CONCRETE), conditionsFromItem(Items.RED_CONCRETE))
-                .criterion(hasItem(Items.WHITE_CONCRETE), conditionsFromItem(Items.WHITE_CONCRETE))
-                .criterion(hasItem(ModItems.RUBIKS_CUBE), conditionsFromItem(ModItems.RUBIKS_CUBE))
-                .criterion(hasItem(Items.YELLOW_CONCRETE), conditionsFromItem(Items.YELLOW_CONCRETE))
-                .criterion(hasItem(Items.GREEN_CONCRETE), conditionsFromItem(Items.GREEN_CONCRETE))
-                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
-                .criterion(hasItem(Items.ORANGE_CONCRETE), conditionsFromItem(Items.ORANGE_CONCRETE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CUBE_CRAFTING_STATION)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBIKS_CUBE, 1)
                 .input(ModItems.GREEN_FRAGMENT)
@@ -117,6 +94,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.WHITE_CONCRETE_POWDER), conditionsFromItem(Blocks.WHITE_CONCRETE_POWDER))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.WHITE_FRAGMENT)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CUBE_SWORD, 1)
+                .pattern(" a ")
+                .pattern("scs")
+                .pattern(" c ")
+                .input('c', ModItems.RUBIKS_CUBE)
+                .input('s', ModItems.CUBE_SHARD)
+                .input('a', ModBlocks.CUBE_ARTIFACT)
+                .criterion(hasItem(ModItems.RUBIKS_CUBE), conditionsFromItem(ModItems.RUBIKS_CUBE))
+                .criterion(hasItem(ModItems.CUBE_SHARD), conditionsFromItem(ModItems.CUBE_SHARD))
+                .criterion(hasItem(ModBlocks.CUBE_ARTIFACT), conditionsFromItem(ModBlocks.CUBE_ARTIFACT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CUBE_SWORD)));
 
     }
 }

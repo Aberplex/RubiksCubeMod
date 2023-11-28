@@ -20,7 +20,6 @@ public class    ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUBE_ARTIFACT);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUBE_CRAFTING_STATION);
     }
 
     @Override

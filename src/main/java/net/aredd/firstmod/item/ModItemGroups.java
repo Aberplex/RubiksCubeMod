@@ -22,8 +22,6 @@ public class ModItemGroups {
                         entries.add(ModItems.ORANGE_FRAGMENT);
                         entries.add(ModItems.GREEN_FRAGMENT);
 
-                        entries.add(ModBlocks.CUBE_CRAFTING_STATION);
-
                         entries.add(ModItems.CUBE_DETECTOR);
 
                         entries.add(ModBlocks.CUBE_ARTIFACT);

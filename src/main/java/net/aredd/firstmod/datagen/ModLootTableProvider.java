@@ -12,7 +12,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.CUBE_CRAFTING_STATION);
         addDrop(ModBlocks.CUBE_ARTIFACT);
     }
 }
