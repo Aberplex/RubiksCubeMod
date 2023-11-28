@@ -6,7 +6,7 @@ import net.aredd.firstmod.entity.ModEntities;
 import net.aredd.firstmod.entity.client.CubeGolemModel;
 import net.aredd.firstmod.entity.client.CubeGolemRenderer;
 import net.aredd.firstmod.entity.client.ModModelLayers;
-import net.aredd.firstmod.screen.CubeCraftStationScreen;
+import net.aredd.firstmod.client.gui.screen.ingame.CubeCraftStationScreen;
 import net.aredd.firstmod.screen.ModScreenHandlerType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;

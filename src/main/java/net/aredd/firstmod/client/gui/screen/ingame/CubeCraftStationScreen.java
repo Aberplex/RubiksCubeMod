@@ -1,6 +1,6 @@
-package net.aredd.firstmod.screen;
+package net.aredd.firstmod.client.gui.screen.ingame;
 
-import net.aredd.firstmod.FirstMod;
+import net.aredd.firstmod.screen.CubeCraftStationScreenHandler;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
