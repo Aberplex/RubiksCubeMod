@@ -25,5 +25,7 @@
 
   "item.firstmod.cube_golem_spawn_egg": "Rubik's Cube Golem Spawn Egg",
 
-  "entity.firstmod.cube_golem": "Rubik's Cube Golem"
+  "entity.firstmod.cube_golem": "Rubik's Cube Golem",
+
+  "container.cube_crafting": "Rubik's Cube Crafting"
 }

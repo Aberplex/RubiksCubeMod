@@ -201,7 +201,7 @@ public class CubeCraftRecipe implements CraftingRecipe {
             return DataResult.success(keyEntry);
         }, DataResult::success);
 
-        private static final Codec<CubeCraftRecipe> CODEC = RawCubeCraftingRecipe.CODEC.flatXmap(recipe -> {
+        private static final Codec<CubeCraftRecipe> CODEC = RawCubeCraftRecipe.CODEC.flatXmap(recipe -> {
             String[] strings = removePadding(recipe.pattern);
             int i = strings[0].length();
             int j = strings.length;
@@ -225,7 +225,7 @@ public class CubeCraftRecipe implements CraftingRecipe {
             CubeCraftRecipe shapedRecipe = new CubeCraftRecipe(recipe.group, recipe.category, i, j, defaultedList, recipe.result, recipe.showNotification);
             return DataResult.success(shapedRecipe);
         }, recipe -> {
-            throw new NotImplementedException("Serializing CubeCraftRecipe is not implemented yet.");
+            throw new NotImplementedException("Serializing DiamondCraftingRecipe is not implemented yet.");
         });
 
         @Override
@@ -259,8 +259,8 @@ public class CubeCraftRecipe implements CraftingRecipe {
             packetByteBuf.writeBoolean(shapedRecipe.showNotification);
         }
 
-        record RawCubeCraftingRecipe(String group, CraftingRecipeCategory category, Map<String, Ingredient> key, List<String> pattern, ItemStack result, boolean showNotification) {
-            public static final Codec<RawCubeCraftingRecipe> CODEC = RecordCodecBuilder.create(instance ->
+        record RawCubeCraftRecipe(String group, CraftingRecipeCategory category, Map<String, Ingredient> key, List<String> pattern, ItemStack result, boolean showNotification) {
+            public static final Codec<RawCubeCraftRecipe> CODEC = RecordCodecBuilder.create(instance ->
                     instance.group(Codecs.createStrictOptionalFieldCodec(Codec.STRING,
                                                     "group", "")
                                             .forGetter(recipe -> recipe.group),
@@ -275,7 +275,7 @@ public class CubeCraftRecipe implements CraftingRecipe {
                                             .forGetter(recipe -> recipe.result),
                                     Codecs.createStrictOptionalFieldCodec(Codec.BOOL, "show_notification", true)
                                             .forGetter(recipe -> recipe.showNotification))
-                            .apply(instance, RawCubeCraftingRecipe::new));
+                            .apply(instance, RawCubeCraftRecipe::new));
         }
     }
 }
