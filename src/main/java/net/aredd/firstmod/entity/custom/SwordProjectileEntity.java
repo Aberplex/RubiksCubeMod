@@ -35,7 +35,7 @@ public class SwordProjectileEntity extends ThrownItemEntity {
     @Override
     protected void onBlockHit(BlockHitResult blockHitResult) {
         if(!this.getWorld().isClient()) {
-            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 1f, World.ExplosionSourceType.BLOCK);
+            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 1.5f, World.ExplosionSourceType.BLOCK);
         }
         this.discard();
     }
@@ -44,7 +44,7 @@ public class SwordProjectileEntity extends ThrownItemEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         if(!this.getWorld().isClient()) {
-            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 1.75f, World.ExplosionSourceType.BLOCK);
+            this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 2f, World.ExplosionSourceType.BLOCK);
         }
         this.discard();
     }
