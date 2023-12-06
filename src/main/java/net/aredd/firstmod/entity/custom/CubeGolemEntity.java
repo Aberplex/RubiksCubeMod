@@ -18,7 +18,9 @@ import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.StriderEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.thrown.PotionEntity;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.world.*;
 import org.jetbrains.annotations.Nullable;
 
@@ -114,11 +116,40 @@ public class CubeGolemEntity extends HostileEntity {
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.45)
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 240)
                 .add(EntityAttributes.GENERIC_ARMOR,0.5)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,35)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,40)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,1)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK,0.01)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 222);
     }
+    @Override
+    public boolean damage(DamageSource source, float amount) {
+        if (this.isInvulnerableTo(source)) {
+            return false;
+        }
+        boolean isPotion = source.getSource() instanceof PotionEntity;
+        if (source.isIn(DamageTypeTags.IS_PROJECTILE) || isPotion) {
+            boolean bl2 = isPotion && this.damageFromPotion(source, (PotionEntity)source.getSource(), amount);
+            for (int i = 0; i < 64; ++i) {
+                if (!this.teleportRandomly()) continue;
+                return true;
+            }
+            return bl2;
+        }
+        boolean bl2 = super.damage(source, amount);
+        if (!this.getWorld().isClient() && !(source.getAttacker() instanceof LivingEntity) && this.random.nextInt(10) != 0) {
+            this.teleportRandomly();
+        }
+        return bl2;
+    }
+
+    private boolean damageFromPotion(DamageSource source, PotionEntity source1, float amount) {
+        return false;
+    }
+
+    private boolean teleportRandomly() {
+        return false;
+    }
+
 
     public void setAttacking(boolean attacking) {
         this.dataTracker.set(ATTACKING, attacking);

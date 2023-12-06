@@ -1,4 +1,4 @@
-// 1.20.2	2023-11-28T16:52:48.0161809	Aberplex's Rubiks's Cube Mod/Recipes
+// 1.20.2	2023-12-03T13:31:19.7513771	Aberplex's Rubiks's Cube Mod/Recipes
 a6342b27b650f46ee2c9a10f4e94e43684a17edd data\firstmod\advancements\recipes\misc\red_fragment.json
 a4067e19c589163bed3967d11c198b41a5433bfc data\firstmod\recipes\red_fragment.json
 301e5a3bd18369571e75979c46b18301ba23a6d2 data\firstmod\recipes\blue_fragment.json
@@ -14,4 +14,4 @@ d706679073d6a94b23e63c38b959927d57d0aa40 data\firstmod\recipes\yellow_fragment.j
 cd0bb0188c41311ac9d15a0a082cd5a2c6ef9775 data\firstmod\recipes\green_fragment.json
 648969d4a8426c4060b9e957f2041f31034bcd59 data\firstmod\advancements\recipes\misc\green_fragment.json
 abf53cf6890987e5df614f0d6ce03be12f3e8320 data\firstmod\advancements\recipes\misc\blue_fragment.json
-44479bc99ecc1dc9a30c3fb91da875f71f6d9b61 data\firstmod\recipes\cube_sword.json
+4978bda5c74fd933827826f8d9ea8a2469955832 data\firstmod\recipes\cube_sword.json

@@ -14,8 +14,8 @@
   },
   "pattern": [
     " a ",
-    "scs",
-    " c "
+    "ccc",
+    " s "
   ],
   "result": {
     "item": "firstmod:cube_sword"

@@ -97,8 +97,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CUBE_SWORD, 1)
                 .pattern(" a ")
-                .pattern("scs")
-                .pattern(" c ")
+                .pattern("ccc")
+                .pattern(" s ")
                 .input('c', ModItems.RUBIKS_CUBE)
                 .input('s', ModItems.CUBE_SHARD)
                 .input('a', ModBlocks.CUBE_ARTIFACT)
